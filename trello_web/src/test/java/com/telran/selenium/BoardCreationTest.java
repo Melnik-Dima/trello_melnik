@@ -10,13 +10,24 @@ public class BoardCreationTest extends TestBase {
         Assert.assertTrue(createBoard("BoardTest1"));
     }
 public boolean createBoard(String name){
-    click(By.cssSelector(".board-tile.mod-add"));
-    click(By.cssSelector(".subtle-input"));
-    type(By.cssSelector(".subtle-input"),name);
-    click(By.xpath("//*[@type='submit']"));
+    ckickByCreateBoardButton();
+    typeNewBoardsName(name);
+    submitBoardCreation();
     return true;
 
 
 }
+
+    public void submitBoardCreation() {
+        click(By.xpath("//*[@type='submit']"));
+    }
+
+    public void typeNewBoardsName(String name) {
+        type(By.cssSelector(".subtle-input"),name);
+    }
+
+    public void ckickByCreateBoardButton() {
+        click(By.cssSelector(".board-tile.mod-add"));
+    }
 
 }
