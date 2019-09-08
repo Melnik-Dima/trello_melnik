@@ -55,7 +55,6 @@ public class TestBase {
 
     public boolean isElementPresent(By locator) {
         return driver.findElements(locator).size() > 0;
-
     }
 
     public void clickContinueButton() {
@@ -85,29 +84,25 @@ public class TestBase {
 
     public void typeNewBoardsName(String boardName) {
 
-        type(By.cssSelector("div.form-container input.subtle-input"),boardName);
+        type(By.cssSelector("div.form-container input.subtle-input"), boardName);
         if (isElementPresent(By.cssSelector(".subtle-chooser-trigger.unstyled-button.org-chooser-trigger"))) {
             click(By.cssSelector(".subtle-chooser-trigger.unstyled-button.org-chooser-trigger"));
             click(By.xpath("//ul[@class='pop-over-list org-chooser']/li[1]"));//no team
         }
     }
 
-    public void ckickByCreateBoardButtonOfBoardsSection() {
-        click(By.cssSelector(".board-tile.mod-add"));
+    public void ckickByCreateBoardButtonOfBoardsSection() {click(By.cssSelector(".board-tile.mod-add"));
     }
 
-    public void confirmBoardCreation() {
-        click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
+    public void confirmBoardCreation() {click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
     }
 
     public void fillBoardCreationForm(String boardName) {
         type(By.cssSelector("[data-test-id='header-create-board-title-input']"), boardName);
-
         if (isElementPresent(By.cssSelector(".W6rMLOx8U0MrPx"))) {
             click(By.cssSelector(".W6rMLOx8U0MrPx"));
             click(By.xpath("//nav[@class='SdlcRrTVPA8Y3K']//li[1]"));//no team
         }
-
     }
 
     public void selectCreateBoardFromDropDown() {
@@ -123,11 +118,10 @@ public class TestBase {
         Thread.sleep(6000);
         click(By.cssSelector("a[href='/']"));
         Thread.sleep(6000);
-
     }
 
     public int getTeamsCount() {
-       return driver.findElements(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
+        return driver.findElements(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
     }
 
     public void clickOnPlusButtonFromLeftNavMenu() {
@@ -151,6 +145,10 @@ public class TestBase {
     }
 
     public void confirmBoardDeletion() {
+    }
+
+    public int getBoardsCount() {
+        return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size();
     }
 }
 
