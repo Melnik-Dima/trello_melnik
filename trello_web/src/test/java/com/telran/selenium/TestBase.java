@@ -156,7 +156,6 @@ public class TestBase {
     }
     public void clickOnMenu() {
         WebElement menuButton = driver.findElement(By.cssSelector(".board-header-btn.mod-show-menu"));
-        System.out.println(menuButton.getCssValue("visibility"));
         if(menuButton.getCssValue("visibility").equals("visible")){
             click(By.cssSelector(".mod-show-menu"));
 
@@ -178,6 +177,10 @@ public class TestBase {
 
     public void clickByTeamSettings() {
         click(By.cssSelector(".icon-gear.icon-sm.OiX3P2i2J92Xat"));
+    }
+
+    public boolean isTherePersonalBoardsPresent() {
+        return isElementPresent(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
     }
 }
 
