@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BoardCreationTests extends TestBase {
-    @Test //(enabled = false)
+    @Test
     public void testBoardCreationFromPlusButtonOnHeader() throws InterruptedException {
         int before = getBoardsCount();
         clickOnPlusButtonOnHeader();
@@ -18,7 +18,7 @@ public class BoardCreationTests extends TestBase {
         Assert.assertEquals(after, before + 1);
     }
 
-    @Test //(enabled = false)
+    @Test//(enabled = false)
     public void testBoardCreationFromPersonalBoardsSection() throws InterruptedException {
         Thread.sleep(5000);
         int before = getBoardsCount();
@@ -33,24 +33,5 @@ public class BoardCreationTests extends TestBase {
         Assert.assertEquals(after, before + 1);
     }
 
-    @Test //(enabled = false)
-    public void testBoardDeletion() throws InterruptedException {
-        //Thread.sleep(5000);
-       // returnToHomePage();
-        Thread.sleep(5000);
-        int before = getBoardsCount();
-        openThirdBoard();
-        clickOnMenu();
-        expandMenu();
-        choseCloseBoard();
-        Thread.sleep(5000);
-        clickByClosePopUpButton();
-        Thread.sleep(4000);
-        confirmBoardDeletion();
-        Thread.sleep(6000);
-        returnToHomePage();
-        Thread.sleep(5000);
-        int after = getBoardsCount();
-        Assert.assertEquals(after, before-1);
-    }
+
 }

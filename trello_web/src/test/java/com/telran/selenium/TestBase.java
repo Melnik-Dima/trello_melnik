@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -122,6 +124,7 @@ public class TestBase {
     }
 
     public int getTeamsCount() {
+      new WebDriverWait(driver,10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")));
         return driver.findElements(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
     }
 
@@ -159,6 +162,23 @@ public class TestBase {
 
         }
 
-    }}
+    }
+
+    protected void confirmTeamDeletion() {
+        click(By.cssSelector(".pop-over.is-shown input[type='submit']"));
+    }
+
+    public void clickByDeleteTeam() {
+        click(By.cssSelector(".quiet-button"));
+    }
+
+    public void clickByFirstTeam() {
+        click(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li[1]"));
+    }
+
+    public void clickByTeamSettings() {
+        click(By.cssSelector(".icon-gear.icon-sm.OiX3P2i2J92Xat"));
+    }
+}
 
 
