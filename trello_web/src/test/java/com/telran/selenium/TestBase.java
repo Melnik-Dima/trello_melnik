@@ -3,6 +3,7 @@ package com.telran.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -150,6 +151,14 @@ public class TestBase {
     public int getBoardsCount() {
         return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size();
     }
-}
+    public void clickOnMenu() {
+        WebElement menuButton = driver.findElement(By.cssSelector(".board-header-btn.mod-show-menu"));
+        System.out.println(menuButton.getCssValue("visibility"));
+        if(menuButton.getCssValue("visibility").equals("visible")){
+            click(By.cssSelector(".mod-show-menu"));
+
+        }
+
+    }}
 
 

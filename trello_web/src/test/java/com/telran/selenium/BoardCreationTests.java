@@ -40,6 +40,7 @@ public class BoardCreationTests extends TestBase {
         Thread.sleep(5000);
         int before = getBoardsCount();
         openThirdBoard();
+        clickOnMenu();
         expandMenu();
         choseCloseBoard();
         Thread.sleep(5000);
