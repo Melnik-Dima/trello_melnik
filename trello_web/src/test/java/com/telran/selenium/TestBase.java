@@ -116,11 +116,16 @@ public class TestBase {
         return driver.findElement(By.cssSelector("h1")).getText();
     }
 
-    public void returnToHomePage() throws InterruptedException {
+    public void returnToHomePage() {
+        if(isElementPresent(By.cssSelector("._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV"))){
+            new WebDriverWait(driver, 15)
+                    .until(ExpectedConditions.stalenessOf(driver.findElement(By.cssSelector("._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV"))));
+            click(By.cssSelector("a[href='/']"));
+            click(By.cssSelector("a[href='/']"));
+        } else
+            click(By.cssSelector("a[href='/']"));
         click(By.cssSelector("a[href='/']"));
-        Thread.sleep(6000);
-        click(By.cssSelector("a[href='/']"));
-        Thread.sleep(6000);
+
     }
 
     public int getTeamsCount() {
@@ -144,7 +149,8 @@ public class TestBase {
         click(By.cssSelector(".js-open-more"));
     }
 
-    public void openThirdBoard() {
+    public void openThirdBoard()
+    {new WebDriverWait(driver,10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='boards-page-board-section-list']/li[3]")));
         click(By.xpath("//*[@class='boards-page-board-section-list']/li[3]"));
     }
 
@@ -152,6 +158,7 @@ public class TestBase {
     }
 
     public int getBoardsCount() {
+        new WebDriverWait(driver,10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")));
         return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size();
     }
     public void clickOnMenu() {
@@ -160,6 +167,7 @@ public class TestBase {
             click(By.cssSelector(".mod-show-menu"));
 
         }
+        return;
 
     }
 
@@ -176,7 +184,8 @@ public class TestBase {
     }
 
     public void clickByTeamSettings() {
-        click(By.cssSelector(".icon-gear.icon-sm.OiX3P2i2J92Xat"));
+        new WebDriverWait(driver,10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='_3AG-Gnm-Fqx-I3']//li[4]")));
+        click(By.xpath("//li[@class='_3AG-Gnm-Fqx-I3']//li[4]"));
     }
 
     public boolean isTherePersonalBoardsPresent() {

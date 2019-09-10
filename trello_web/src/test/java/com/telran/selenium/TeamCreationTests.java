@@ -1,7 +1,7 @@
 package com.telran.selenium;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -72,4 +72,15 @@ public class TeamCreationTests extends TestBase {
         Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
     }
 
+    @AfterClass //(enabled=false)
+    public void cleanTeams() {
+        int i = 0;
+        while (i < 2) {
+            clickByFirstTeam();
+            clickByTeamSettings();
+            clickByDeleteTeam();
+            confirmTeamDeletion();
+            i++;
+        }
+    }
 }
