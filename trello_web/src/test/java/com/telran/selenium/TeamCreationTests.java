@@ -16,7 +16,7 @@ public class TeamCreationTests extends TestBase {
     }
 
     @BeforeMethod
-    public void isOnHomePage() throws InterruptedException {
+    public void isOnHomePage() {
         if (!isTherePersonalBoardsPresent()) {
             returnToHomePage();
 
@@ -25,17 +25,17 @@ public class TeamCreationTests extends TestBase {
 
     @Test
     public void testTeamCreationFromPlusButtonOnHeader() throws InterruptedException {
-        Thread.sleep(10000);
+        //Thread.sleep(10000);
         int before = getTeamsCount();
         clickOnPlusButtonOnHeader();
         selectCreateTeamFromDropDown();
-        String teamName = "QA21";
+        String teamName = "QA21" + System.currentTimeMillis();
         fillTeamCreationForm(teamName, "descriptionQA21");
         clickContinueButton();
-        Thread.sleep(4000);
+        //Thread.sleep(4000);
         String createdTeamName = getTeamNameFromTeamPage();
         returnToHomePage();
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         int after = getTeamsCount();
         Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
         Assert.assertEquals(after, before + 1);
@@ -43,7 +43,7 @@ public class TeamCreationTests extends TestBase {
 
     @Test //(enabled = false)
     public void testTeamCreationCansellationFromPlusButtonOnHeader() throws InterruptedException {
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         int before = getTeamsCount();
         clickOnPlusButtonOnHeader();
         selectCreateTeamFromDropDown();
@@ -58,7 +58,7 @@ public class TeamCreationTests extends TestBase {
 
     @Test //(enabled = false)
     public void testTeamCreationFromPlusButtonOnLeftNavMenu() throws InterruptedException {
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         int before = getTeamsCount();
         clickOnPlusButtonFromLeftNavMenu();
         String teamName = "QA21" + System.currentTimeMillis();

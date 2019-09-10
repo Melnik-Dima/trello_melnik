@@ -191,6 +191,11 @@ public class TestBase {
     public boolean isTherePersonalBoardsPresent() {
         return isElementPresent(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
     }
+
+    public String getBoardNameFromBoardPage() {
+        new WebDriverWait(driver,10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".js-board-editing-target.board-header-btn-text")));
+        return driver.findElement(By.cssSelector(".js-board-editing-target.board-header-btn-text")).getText();
+    }
 }
 
 

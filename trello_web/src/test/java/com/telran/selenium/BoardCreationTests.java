@@ -23,30 +23,37 @@ public class BoardCreationTests extends TestBase {
         }
     }
 
-    @Test(enabled = false)
+    @Test //(enabled = false)
     public void testBoardCreationFromPlusButtonOnHeader() throws InterruptedException {
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         int before = getBoardsCount();
         clickOnPlusButtonOnHeader();
         selectCreateBoardFromDropDown();
-        fillBoardCreationForm("QA21");
+        String boardName = "QA21" + System.currentTimeMillis();
+        fillBoardCreationForm(boardName);
         confirmBoardCreation();
+        String createdBoardName = getBoardNameFromBoardPage();
         returnToHomePage();
         int after = getBoardsCount();
         Assert.assertEquals(after, before + 1);
+        Assert.assertEquals(createdBoardName.toLowerCase(), boardName.toLowerCase());
     }
+
 
     @Test//(enabled = false)
     public void testBoardCreationFromPersonalBoardsSection() throws InterruptedException {
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         int before = getBoardsCount();
         ckickByCreateBoardButtonOfBoardsSection();
-        Thread.sleep(4000);
-        typeNewBoardsName("QA21");
+        //Thread.sleep(4000);
+        String boardName = "QA21" + System.currentTimeMillis();
+        typeNewBoardsName(boardName);
         submitBoardCreation();
+        String createdBoardName = getBoardNameFromBoardPage();
         returnToHomePage();
         int after = getBoardsCount();
         Assert.assertEquals(after, before + 1);
+        Assert.assertEquals(createdBoardName.toLowerCase(), boardName.toLowerCase());
     }
 
     @AfterClass //(enabled=false)
@@ -55,7 +62,6 @@ public class BoardCreationTests extends TestBase {
         while (i < 2) {
             Thread.sleep(5000);
             openThirdBoard();
-            //Thread.sleep(3000);
             clickOnMenu();
             expandMenu();
             choseCloseBoard();
