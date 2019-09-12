@@ -19,7 +19,7 @@ public class TestBase {
     @BeforeClass
     public void setUp() {
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         openSite("https://trello.com/");
         login("familymelniks@gmail.com", "gnomikim");
@@ -94,7 +94,7 @@ public class TestBase {
         }
     }
 
-    public void ckickByCreateBoardButtonOfBoardsSection() {click(By.cssSelector(".board-tile.mod-add"));
+    public void clickByCreateBoardButtonOfBoardsSection() {click(By.cssSelector(".board-tile.mod-add"));
     }
 
     public void confirmBoardCreation() {click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
@@ -195,6 +195,14 @@ public class TestBase {
     public String getBoardNameFromBoardPage() {
         new WebDriverWait(driver,10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".js-board-editing-target.board-header-btn-text")));
         return driver.findElement(By.cssSelector(".js-board-editing-target.board-header-btn-text")).getText();
+    }
+    public void waitForElementAndClick(By locator,int time) {
+       new WebDriverWait(driver,time).until(ExpectedConditions.elementToBeClickable(locator)).click();
+}
+    public void waitForElementAndType(By locator,int time, String string) {
+        waitForElementAndClick(locator,time);
+        driver.findElement(locator).clear();
+        driver.findElement(locator).sendKeys(string);
     }
 }
 

@@ -44,7 +44,7 @@ public class BoardCreationTests extends TestBase {
     public void testBoardCreationFromPersonalBoardsSection() throws InterruptedException {
         //Thread.sleep(5000);
         int before = getBoardsCount();
-        ckickByCreateBoardButtonOfBoardsSection();
+        clickByCreateBoardButtonOfBoardsSection();
         //Thread.sleep(4000);
         String boardName = "QA21" + System.currentTimeMillis();
         typeNewBoardsName(boardName);
