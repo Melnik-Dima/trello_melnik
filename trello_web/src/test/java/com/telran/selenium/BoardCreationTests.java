@@ -9,16 +9,16 @@ import org.testng.annotations.Test;
 public class BoardCreationTests extends TestBase {
     @BeforeClass
     public void ensurePreconditions() {
-        if (!isUserLoggedIn()) {
-            login("familymelniks@gmail.com", "gnomikim");
+        if (!app.isUserLoggedIn()) {
+            app.login("familymelniks@gmail.com", "gnomikim");
         }
 
     }
 
     @BeforeMethod
     public void isOnHomePage() {
-        if (!isTherePersonalBoardsPresent()) {
-            returnToHomePage();
+        if (!app.isTherePersonalBoardsPresent()) {
+            app.returnToHomePage();
 
         }
     }
@@ -26,15 +26,15 @@ public class BoardCreationTests extends TestBase {
     @Test //(enabled = false)
     public void testBoardCreationFromPlusButtonOnHeader() throws InterruptedException {
         //Thread.sleep(5000);
-        int before = getBoardsCount();
-        clickOnPlusButtonOnHeader();
-        selectCreateBoardFromDropDown();
+        int before = app.getBoardsCount();
+        app.clickOnPlusButtonOnHeader();
+        app.selectCreateBoardFromDropDown();
         String boardName = "QA21" + System.currentTimeMillis();
-        fillBoardCreationForm(boardName);
-        confirmBoardCreation();
-        String createdBoardName = getBoardNameFromBoardPage();
-        returnToHomePage();
-        int after = getBoardsCount();
+        app.fillBoardCreationForm(boardName);
+        app.confirmBoardCreation();
+        String createdBoardName = app.getBoardNameFromBoardPage();
+        app.returnToHomePage();
+        int after = app.getBoardsCount();
         Assert.assertEquals(after, before + 1);
         Assert.assertEquals(createdBoardName.toLowerCase(), boardName.toLowerCase());
     }
@@ -43,15 +43,15 @@ public class BoardCreationTests extends TestBase {
     @Test//(enabled = false)
     public void testBoardCreationFromPersonalBoardsSection() throws InterruptedException {
         //Thread.sleep(5000);
-        int before = getBoardsCount();
-        clickByCreateBoardButtonOfBoardsSection();
+        int before = app.getBoardsCount();
+        app.clickByCreateBoardButtonOfBoardsSection();
         //Thread.sleep(4000);
         String boardName = "QA21" + System.currentTimeMillis();
-        typeNewBoardsName(boardName);
-        submitBoardCreation();
-        String createdBoardName = getBoardNameFromBoardPage();
-        returnToHomePage();
-        int after = getBoardsCount();
+        app.typeNewBoardsName(boardName);
+        app.submitBoardCreation();
+        String createdBoardName = app.getBoardNameFromBoardPage();
+        app.returnToHomePage();
+        int after = app.getBoardsCount();
         Assert.assertEquals(after, before + 1);
         Assert.assertEquals(createdBoardName.toLowerCase(), boardName.toLowerCase());
     }
@@ -61,13 +61,13 @@ public class BoardCreationTests extends TestBase {
         int i = 0;
         while (i < 2) {
             Thread.sleep(5000);
-            openThirdBoard();
-            clickOnMenu();
-            expandMenu();
-            choseCloseBoard();
-            clickByClosePopUpButton();
-            confirmBoardDeletion();
-            returnToHomePage();
+            app.openThirdBoard();
+            app.clickOnMenu();
+            app.expandMenu();
+            app.choseCloseBoard();
+            app.clickByClosePopUpButton();
+            app.confirmBoardDeletion();
+            app.returnToHomePage();
             i++;
         }
     }

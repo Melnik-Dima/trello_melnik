@@ -9,16 +9,16 @@ import org.testng.annotations.Test;
 public class TeamCreationTests extends TestBase {
     @BeforeClass
     public void ensurePreconditions() {
-        if (!isUserLoggedIn()) {
-            login("familymelniks@gmail.com", "gnomikim");
+        if (!app.isUserLoggedIn()) {
+            app.login("familymelniks@gmail.com", "gnomikim");
         }
 
     }
 
     @BeforeMethod
     public void isOnHomePage() {
-        if (!isTherePersonalBoardsPresent()) {
-            returnToHomePage();
+        if (!app.isTherePersonalBoardsPresent()) {
+            app.returnToHomePage();
 
         }
     }
@@ -26,17 +26,17 @@ public class TeamCreationTests extends TestBase {
     @Test
     public void testTeamCreationFromPlusButtonOnHeader() throws InterruptedException {
         //Thread.sleep(10000);
-        int before = getTeamsCount();
-        clickOnPlusButtonOnHeader();
-        selectCreateTeamFromDropDown();
+        int before = app.getTeamsCount();
+        app.clickOnPlusButtonOnHeader();
+        app.selectCreateTeamFromDropDown();
         String teamName = "QA21" + System.currentTimeMillis();
-        fillTeamCreationForm(teamName, "descriptionQA21");
-        clickContinueButton();
+        app.fillTeamCreationForm(teamName, "descriptionQA21");
+        app.clickContinueButton();
         //Thread.sleep(4000);
-        String createdTeamName = getTeamNameFromTeamPage();
-        returnToHomePage();
+        String createdTeamName = app.getTeamNameFromTeamPage();
+        app.returnToHomePage();
         //Thread.sleep(5000);
-        int after = getTeamsCount();
+        int after = app.getTeamsCount();
         Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
         Assert.assertEquals(after, before + 1);
     }
@@ -44,14 +44,14 @@ public class TeamCreationTests extends TestBase {
     @Test //(enabled = false)
     public void testTeamCreationCansellationFromPlusButtonOnHeader() throws InterruptedException {
         //Thread.sleep(5000);
-        int before = getTeamsCount();
-        clickOnPlusButtonOnHeader();
-        selectCreateTeamFromDropDown();
-        fillTeamCreationForm("QA21", "descriptionQA21");
-        clickXButton();
-        returnToHomePage();
+        int before = app.getTeamsCount();
+        app.clickOnPlusButtonOnHeader();
+        app.selectCreateTeamFromDropDown();
+        app.fillTeamCreationForm("QA21", "descriptionQA21");
+        app.clickXButton();
+        app.returnToHomePage();
         Thread.sleep(3000);
-        int after = getTeamsCount();
+        int after = app.getTeamsCount();
         Assert.assertEquals(after, before);
 
     }
@@ -59,15 +59,15 @@ public class TeamCreationTests extends TestBase {
     @Test //(enabled = false)
     public void testTeamCreationFromPlusButtonOnLeftNavMenu() throws InterruptedException {
         //Thread.sleep(5000);
-        int before = getTeamsCount();
-        clickOnPlusButtonFromLeftNavMenu();
+        int before = app.getTeamsCount();
+        app.clickOnPlusButtonFromLeftNavMenu();
         String teamName = "QA21" + System.currentTimeMillis();
-        fillTeamCreationForm(teamName, "descriptionQA21");
-        clickContinueButton();
-        String createdTeamName = getTeamNameFromTeamPage();
-        returnToHomePage();
+        app.fillTeamCreationForm(teamName, "descriptionQA21");
+        app.clickContinueButton();
+        String createdTeamName = app.getTeamNameFromTeamPage();
+        app.returnToHomePage();
         Thread.sleep(3000);
-        int after = getTeamsCount();
+        int after = app.getTeamsCount();
         Assert.assertEquals(after, before + 1);
         Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
     }
@@ -76,11 +76,13 @@ public class TeamCreationTests extends TestBase {
     public void cleanTeams() {
         int i = 0;
         while (i < 2) {
-            clickByFirstTeam();
-            clickByTeamSettings();
-            clickByDeleteTeam();
-            confirmTeamDeletion();
+            app.clickByFirstTeam();
+            app.clickByTeamSettings();
+            app.clickByDeleteTeam();
+            app.confirmTeamDeletion();
             i++;
         }
+
     }
+
 }

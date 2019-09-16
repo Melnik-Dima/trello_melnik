@@ -1,36 +1,37 @@
 package com.telran.selenium;
 
+import net.bytebuddy.utility.JavaModule;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TeamDeletionTests extends TestBase {
-    @BeforeClass
+    @BeforeClass (enabled=false)
     public void ensurePreconditions() {
-        if (!isUserLoggedIn()) {
-            login("familymelniks@gmail.com", "gnomikim");
+        if (!app.isUserLoggedIn()) {
+            app.login("familymelniks@gmail.com", "gnomikim");
         }
 
     }
 
     @BeforeMethod
     public void isOnHomePage()  {
-        if (!isTherePersonalBoardsPresent()) {
-            returnToHomePage();
+        if (!app.isTherePersonalBoardsPresent()) {
+            app.returnToHomePage();
 
         }
     }
 
     @Test
     public void testTeamDeletionFromLeftNavMenu() throws InterruptedException {
-        int before = getTeamsCount();
-        clickByFirstTeam();
-        clickByTeamSettings();
-        clickByDeleteTeam();
-        confirmTeamDeletion();
+        int before = app.getTeamsCount();
+        app.clickByFirstTeam();
+        app.clickByTeamSettings();
+        app.clickByDeleteTeam();
+        app.confirmTeamDeletion();
         Thread.sleep(3000);
-        int after = getTeamsCount();
+        int after = app.getTeamsCount();
         Assert.assertEquals(after, before - 1);
 
     }

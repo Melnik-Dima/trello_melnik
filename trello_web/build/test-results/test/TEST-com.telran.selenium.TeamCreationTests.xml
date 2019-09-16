@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.selenium.TeamCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-12T15:39:44" hostname="MacBook-Pro-Dmitrij.local" time="60.419">
+<testsuite name="com.telran.selenium.TeamCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-12T17:05:43" hostname="MacBook-Pro-Dmitrij.local" time="61.13">
   <properties/>
-  <testcase name="testTeamCreationCansellationFromPlusButtonOnHeader" classname="com.telran.selenium.TeamCreationTests" time="19.776"/>
-  <testcase name="testTeamCreationFromPlusButtonOnHeader" classname="com.telran.selenium.TeamCreationTests" time="19.722"/>
-  <testcase name="testTeamCreationFromPlusButtonOnLeftNavMenu" classname="com.telran.selenium.TeamCreationTests" time="20.886"/>
+  <testcase name="testTeamCreationCansellationFromPlusButtonOnHeader" classname="com.telran.selenium.TeamCreationTests" time="19.987"/>
+  <testcase name="testTeamCreationFromPlusButtonOnHeader" classname="com.telran.selenium.TeamCreationTests" time="20.151"/>
+  <testcase name="testTeamCreationFromPlusButtonOnLeftNavMenu" classname="com.telran.selenium.TeamCreationTests" time="20.932"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 8908
+  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 14362
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-сен 12, 2019 6:39:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+сен 12, 2019 8:05:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
