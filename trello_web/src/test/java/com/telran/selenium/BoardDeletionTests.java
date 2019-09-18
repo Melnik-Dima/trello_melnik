@@ -8,31 +8,31 @@ import org.testng.annotations.Test;
 public class BoardDeletionTests extends TestBase {
     @BeforeClass
     public void ensurePreconditions() {
-        if (!app.isUserLoggedIn()) {
-            app.login("familymelniks@gmail.com", "gnomikim");
+        if (!app.getSessionHelper().isUserLoggedIn()) {
+            app.getSessionHelper().login("familymelniks@gmail.com", "gnomikim");
         }
 
     }
 
     @BeforeMethod
     public void isOnHomePage() {
-        if (!app.isTherePersonalBoardsPresent()) {
-            app.returnToHomePage();
+        if (!app.getBoardHelper().isTherePersonalBoardsPresent()) {
+            app.getBoardHelper().returnToHomePage();
 
         }
     }
     @Test
     public void testBoardDeletion()  {
         //Thread.sleep(5000);
-        int before = app.getBoardsCount();
-        app.openThirdBoard();
-        app.clickOnMenu();
-        app.expandMenu();
-        app.choseCloseBoard();
-        app.clickByClosePopUpButton();
-        app.confirmBoardDeletion();
-        app.returnToHomePage();
-        int after = app.getBoardsCount();
+        int before = app.getBoardHelper().getBoardsCount();
+        app.getBoardHelper().openThirdBoard();
+        app.getBoardHelper().clickOnMenu();
+        app.getBoardHelper().expandMenu();
+        app.getBoardHelper().choseCloseBoard();
+        app.getBoardHelper().clickByClosePopUpButton();
+        app.getBoardHelper().confirmBoardDeletion();
+        app.getBoardHelper().returnToHomePage();
+        int after = app.getBoardHelper().getBoardsCount();
         Assert.assertEquals(after, before - 1);
     }
 }
