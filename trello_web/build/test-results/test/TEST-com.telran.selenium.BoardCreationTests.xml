@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.selenium.BoardCreationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-16T16:55:26" hostname="MacBook-Pro-Dmitrij.local" time="36.367">
+  <properties/>
+  <testcase name="testBoardCreationFromPersonalBoardsSection" classname="com.telran.selenium.BoardCreationTests" time="18.483"/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeader" classname="com.telran.selenium.BoardCreationTests" time="17.859"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
