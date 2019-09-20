@@ -1,4 +1,4 @@
-package com.telran.selenium;
+package com.telran.selenium.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;

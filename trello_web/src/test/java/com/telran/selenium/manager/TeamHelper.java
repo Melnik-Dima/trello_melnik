@@ -1,4 +1,4 @@
-package com.telran.selenium;
+package com.telran.selenium.manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -29,15 +29,16 @@ public class TeamHelper extends HelperBase {
     }
 
     public String getTeamNameFromTeamPage() {
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h1")));
         return driver.findElement(By.cssSelector("h1")).getText();
     }
 
     public int getTeamsCount() {
-        new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")));
         return driver.findElements(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
     }
 
-    protected void confirmTeamDeletion() {
+    public void confirmTeamDeletion() {
         click(By.cssSelector(".pop-over.is-shown input[type='submit']"));
     }
 
@@ -66,4 +67,18 @@ public class TeamHelper extends HelperBase {
         }
     }
 
+    public void initChangeTeamProfile() {
+        click(By.cssSelector(".js-edit-profile"));
+        // waitForElementAndClick(By.cssSelector(".js-edit-profile"),10);
+
+    }
+
+    public void changeTeamProfile(String name, String description) {
+        type(By.name("displayName"), name);
+        type(By.name("desc"), description);
+    }
+
+    public void confirmTeamEdition() {
+        click(By.cssSelector(".js-submit-profile"));
+    }
 }

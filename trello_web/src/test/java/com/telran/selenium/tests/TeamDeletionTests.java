@@ -1,4 +1,4 @@
-package com.telran.selenium;
+package com.telran.selenium.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -29,7 +29,7 @@ public class TeamDeletionTests extends TestBase {
         app.getTeamHelper().clickByTeamSettings();
         app.getTeamHelper().clickByDeleteTeam();
         app.getTeamHelper().confirmTeamDeletion();
-        Thread.sleep(3000);
+
         int after = app.getTeamHelper().getTeamsCount();
         Assert.assertEquals(after, before - 1);
 

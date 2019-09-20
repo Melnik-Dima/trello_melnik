@@ -1,4 +1,4 @@
-package com.telran.selenium;
+package com.telran.selenium.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -22,10 +22,11 @@ public class BoardDeletionTests extends TestBase {
         }
     }
     @Test
-    public void testBoardDeletion()  {
+    public void testBoardDeletion() throws InterruptedException {
         //Thread.sleep(5000);
         int before = app.getBoardHelper().getBoardsCount();
-        app.getBoardHelper().openThirdBoard();
+        Thread.sleep(5000);
+        app.getBoardHelper().openThirstBoard();
         app.getBoardHelper().clickOnMenu();
         app.getBoardHelper().expandMenu();
         app.getBoardHelper().choseCloseBoard();

@@ -1,6 +1,7 @@
-package com.telran.selenium;
+package com.telran.selenium.manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -55,7 +56,7 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector(".js-open-more"));
     }
 
-    public void openThirdBoard() {
+    public void openThirstBoard() {
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='boards-page-board-section-list']/li[1]")));
         click(By.xpath("//*[@class='boards-page-board-section-list']/li[1]"));
     }
@@ -92,7 +93,7 @@ public class BoardHelper extends HelperBase{
         int counts = getBoardsCount();
         while (counts > 6) {
             refresh();
-            openThirdBoard();
+            openThirstBoard();
             clickOnMenu();
             expandMenu();
             choseCloseBoard();
@@ -101,5 +102,18 @@ public class BoardHelper extends HelperBase{
             returnToHomePage();
             counts = getBoardsCount();
         }
+    }
+
+    public void typeNewName(String name) {
+        driver.findElement(By.xpath("//input[@class='board-name-input js-board-name-input']")).sendKeys(name);
+    }
+
+    public void confirmChangingBoard() {
+        driver.findElement(By.xpath("//input[@class='board-name-input js-board-name-input']")).sendKeys(Keys.ENTER);
+
+    }
+
+    public void initChangeBoardName() {
+        click(By.xpath("//span[@class='js-board-editing-target board-header-btn-text']"));
     }
 }
