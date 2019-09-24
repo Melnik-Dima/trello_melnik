@@ -7,10 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BoardHelper extends HelperBase{
+public class BoardHelper extends HelperBase {
     public BoardHelper(WebDriver driver) {
         super(driver);
     }
+
     public void submitBoardCreation() {
         click(By.xpath("//*[@type='submit']"));
     }
@@ -115,5 +116,17 @@ public class BoardHelper extends HelperBase{
 
     public void initChangeBoardName() {
         click(By.xpath("//span[@class='js-board-editing-target board-header-btn-text']"));
+    }
+
+    public boolean isAnyBoardPresent() {
+        return getBoardsCount() > 0;
+    }
+
+    public void createBoard() {
+        clickOnPlusButtonOnHeader();
+        selectCreateBoardFromDropDown();
+        String boardName = "QA21" + System.currentTimeMillis();
+        fillBoardCreationForm(new BoardNames().setBoardName(boardName));
+        confirmBoardCreation();
     }
 }

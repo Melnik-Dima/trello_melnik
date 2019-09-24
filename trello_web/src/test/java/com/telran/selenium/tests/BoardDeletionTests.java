@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 public class BoardDeletionTests extends TestBase {
     @BeforeClass
     public void ensurePreconditions() {
-        if (!app.getSessionHelper().isUserLoggedIn()) {
-            app.getSessionHelper().login("familymelniks@gmail.com", "gnomikim");
+        if (!app.getBoardHelper().isAnyBoardPresent()) {
+            app.getBoardHelper().createBoard();
         }
 
     }

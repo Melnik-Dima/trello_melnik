@@ -30,8 +30,7 @@ public class BoardCreationTests extends TestBase {
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/BoardsName.csv")));
         String line = reader.readLine();
         while (line != null) {
-            String name = line.toString();
-            list.add(new Object[]{new BoardNames().setBoardName(name)});
+            list.add(new Object[]{new BoardNames().setBoardName(line)});
             line = reader.readLine();
         }
         return list.iterator();
@@ -59,14 +58,13 @@ public class BoardCreationTests extends TestBase {
         int before = app.getBoardHelper().getBoardsCount();
         app.getBoardHelper().clickOnPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoardFromDropDown();
-        String boardName = "QA21" + System.currentTimeMillis();
         app.getBoardHelper().fillBoardCreationForm(bName);
         app.getBoardHelper().confirmBoardCreation();
         String createdBoardName = app.getBoardHelper().getBoardNameFromBoardPage();
         app.getBoardHelper().returnToHomePage();
         int after = app.getBoardHelper().getBoardsCount();
         Assert.assertEquals(after, before + 1);
-        Assert.assertEquals(createdBoardName.toLowerCase(), boardName.toLowerCase());
+        Assert.assertEquals(createdBoardName.toLowerCase(), name.toLowerCase());
     }
 
     @Test //(enabled = false)
@@ -89,7 +87,6 @@ public class BoardCreationTests extends TestBase {
     @Test//(enabled = false)
     public void testBoardCreationFromPersonalBoardsSection() throws InterruptedException {
         //Thread.sleep(5000);
-
         int before = app.getBoardHelper().getBoardsCount();
         app.getBoardHelper().clickByCreateBoardButtonOfBoardsSection();
         //Thread.sleep(4000);
