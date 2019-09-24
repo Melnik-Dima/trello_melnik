@@ -8,11 +8,12 @@ import org.testng.annotations.Test;
 public class TeamDeletionTests extends TestBase {
     @BeforeClass //(enabled=false)
     public void ensurePreconditions() {
-        if (!app.getSessionHelper().isUserLoggedIn()) {
-            app.getSessionHelper().login("familymelniks@gmail.com", "gnomikim");
+        if (!app.getTeamHelper().isAnyTeamPresent()) {
+            app.getTeamHelper().createTeam();
         }
 
     }
+
 
     @BeforeMethod
     public void isOnHomePage()  {

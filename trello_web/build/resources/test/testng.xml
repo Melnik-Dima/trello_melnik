@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="MySuite" verbose="1" >
+<suite name="MySuite" verbose="1">
     <test name="RegressionTrello">
         <classes>
             <class name="com.telran.selenium.tests.TeamCreationTests"/>

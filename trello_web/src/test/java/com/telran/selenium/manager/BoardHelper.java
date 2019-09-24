@@ -15,9 +15,9 @@ public class BoardHelper extends HelperBase{
         click(By.xpath("//*[@type='submit']"));
     }
 
-    public void typeNewBoardsName(String boardName) {
+    public void typeNewBoardsName(BoardNames name) {
 
-        type(By.cssSelector("div.form-container input.subtle-input"), boardName);
+        type(By.cssSelector("div.form-container input.subtle-input"), name.getBoardName());
         if (isElementPresent(By.cssSelector(".subtle-chooser-trigger.unstyled-button.org-chooser-trigger"))) {
             click(By.cssSelector(".subtle-chooser-trigger.unstyled-button.org-chooser-trigger"));
             click(By.xpath("//ul[@class='pop-over-list org-chooser']/li[1]"));//no team
@@ -32,8 +32,8 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
     }
 
-    public void fillBoardCreationForm(String boardName) {
-        type(By.cssSelector("[data-test-id='header-create-board-title-input']"), boardName);
+    public void fillBoardCreationForm(BoardNames boardName1) {
+        type(By.cssSelector("[data-test-id='header-create-board-title-input']"), boardName1.getBoardName());
         if (isElementPresent(By.cssSelector(".W6rMLOx8U0MrPx"))) {
             click(By.cssSelector(".W6rMLOx8U0MrPx"));
             click(By.xpath("//nav[@class='SdlcRrTVPA8Y3K']//li[1]"));//no team
