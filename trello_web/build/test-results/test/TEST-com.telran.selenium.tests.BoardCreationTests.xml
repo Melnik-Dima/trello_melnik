@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.selenium.tests.BoardCreationTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-09-24T19:43:18" hostname="MacBook-Pro-Dmitrij.local" time="164.418">
+  <properties/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeaderWithDataProvider[0](name)" classname="com.telran.selenium.tests.BoardCreationTests" time="32.994"/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeaderWithDataProvider[1](Name)" classname="com.telran.selenium.tests.BoardCreationTests" time="32.754"/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeaderWithDataProvider[2](12325)" classname="com.telran.selenium.tests.BoardCreationTests" time="32.752"/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeaderWithDataProvider[3]($%^&amp;)" classname="com.telran.selenium.tests.BoardCreationTests" time="32.925"/>
+  <testcase name="testBoardCreationFromPlusButtonOnHeaderWithDataProvider[4](name)" classname="com.telran.selenium.tests.BoardCreationTests" time="32.883"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
