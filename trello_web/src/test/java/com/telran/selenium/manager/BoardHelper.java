@@ -1,5 +1,6 @@
 package com.telran.selenium.manager;
 
+import com.telran.selenium.model.BoardNames;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -58,7 +59,7 @@ public class BoardHelper extends HelperBase {
     }
 
     public void openThirstBoard() {
-        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='boards-page-board-section-list']/li[1]")));
+        new WebDriverWait(driver,50).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='boards-page-board-section-list']/li[1]")));
         click(By.xpath("//*[@class='boards-page-board-section-list']/li[1]"));
     }
 

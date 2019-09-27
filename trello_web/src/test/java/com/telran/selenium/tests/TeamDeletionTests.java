@@ -25,6 +25,7 @@ public class TeamDeletionTests extends TestBase {
 
     @Test
     public void testTeamDeletionFromLeftNavMenu() throws InterruptedException {
+        app.getSessionHelper().refresh();
         int before = app.getTeamHelper().getTeamsCount();
         app.getTeamHelper().clickByFirstTeam();
         app.getTeamHelper().clickByTeamSettings();

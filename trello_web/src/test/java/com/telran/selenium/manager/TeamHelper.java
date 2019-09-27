@@ -1,5 +1,6 @@
 package com.telran.selenium.manager;
 
+import com.telran.selenium.model.TeamData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,12 +17,14 @@ public class TeamHelper extends HelperBase {
     }
 
     public void fillTeamCreationForm(TeamData team) {
-        waitForElementAndType((By.cssSelector("[data-test-id='header-create-team-name-input']")), 20, team.getTeamName());
+        type((By.cssSelector("[data-test-id='header-create-team-name-input']")),team.getTeamName());
+        //waitForElementAndType((By.cssSelector("[data-test-id='header-create-team-name-input']")), 20, team.getTeamName());
         type(By.cssSelector("textarea"), team.getDescription());
     }
 
     public void selectCreateTeamFromDropDown() {
-        click(By.cssSelector("[data-test-id='header-create-team-button']"));
+        waitForElementAndClick(By.cssSelector("[data-test-id='header-create-team-button']"),20);
+        //click(By.cssSelector("[data-test-id='header-create-team-button']"));
     }
 
     public void clickXButton() {
@@ -47,12 +50,13 @@ public class TeamHelper extends HelperBase {
     }
 
     public void clickByFirstTeam() {
+        waitForElementAndClick(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li[1]"),20);
         click(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li[1]"));
     }
 
     public void clickByTeamSettings() {
-        new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='_3AG-Gnm-Fqx-I3']//li[4]")));
-        click(By.xpath("//li[@class='_3AG-Gnm-Fqx-I3']//li[4]"));
+        new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("ul .icon-gear.icon-sm")));
+        click(By.cssSelector("ul .icon-gear.icon-sm"));
     }
 
     public void cleanTeams() {

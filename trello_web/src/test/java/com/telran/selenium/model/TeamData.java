@@ -1,4 +1,4 @@
-package com.telran.selenium.manager;
+package com.telran.selenium.model;
 
 public class TeamData {
     private  String teamName;

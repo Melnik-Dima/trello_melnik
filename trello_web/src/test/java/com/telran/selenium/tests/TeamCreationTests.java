@@ -1,6 +1,6 @@
 package com.telran.selenium.tests;
 
-import com.telran.selenium.manager.TeamData;
+import com.telran.selenium.model.TeamData;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -88,9 +88,8 @@ public class TeamCreationTests extends TestBase {
     }
 
     @Test(dataProvider = "validTeamsFromcsv")
-    public void testTeamCreationWithDataProviderFromCsv(String teamName, String description) {
+    public void testTeamCreationWithDataProviderFromCsv(TeamData team) {
         //Thread.sleep(10000);
-        TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
         int before = app.getTeamHelper().getTeamsCount();
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
@@ -101,7 +100,7 @@ public class TeamCreationTests extends TestBase {
         app.getTeamHelper().returnToHomePage();
         //Thread.sleep(5000);
         int after = app.getTeamHelper().getTeamsCount();
-        Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
+        Assert.assertEquals(createdTeamName.toLowerCase(), team.getTeamName().toLowerCase());
         Assert.assertEquals(after, before + 1);
     }
 

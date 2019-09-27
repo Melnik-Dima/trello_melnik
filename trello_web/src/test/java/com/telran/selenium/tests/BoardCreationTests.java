@@ -1,6 +1,6 @@
 package com.telran.selenium.tests;
 
-import com.telran.selenium.manager.BoardNames;
+import com.telran.selenium.model.BoardNames;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -30,7 +30,7 @@ public class BoardCreationTests extends TestBase {
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/BoardsName.csv")));
         String line = reader.readLine();
         while (line != null) {
-            list.add(new Object[]{new BoardNames().setBoardName(line)});
+            list.add(new Object[]{new BoardNames().setBoardName(line.trim())});
             line = reader.readLine();
         }
         return list.iterator();
@@ -65,6 +65,20 @@ public class BoardCreationTests extends TestBase {
         int after = app.getBoardHelper().getBoardsCount();
         Assert.assertEquals(after, before + 1);
         Assert.assertEquals(createdBoardName.toLowerCase(), name.toLowerCase());
+    }
+    @Test(dataProvider = "validBoardsFromcsv")
+    public void testBoardCreationFromPlusButtonOnHeaderWithDataProviderFromCsv(BoardNames name) throws InterruptedException {
+        Thread.sleep(5000);
+        int before = app.getBoardHelper().getBoardsCount();
+        app.getBoardHelper().clickOnPlusButtonOnHeader();
+        app.getBoardHelper().selectCreateBoardFromDropDown();
+        app.getBoardHelper().fillBoardCreationForm(name);
+        app.getBoardHelper().confirmBoardCreation();
+        String createdBoardName = app.getBoardHelper().getBoardNameFromBoardPage();
+        app.getBoardHelper().returnToHomePage();
+        int after = app.getBoardHelper().getBoardsCount();
+        Assert.assertEquals(after, before + 1);
+        Assert.assertEquals(createdBoardName.toLowerCase(),name.getBoardName().toLowerCase());
     }
 
     @Test //(enabled = false)

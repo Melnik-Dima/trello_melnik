@@ -1,4 +1,4 @@
-package com.telran.selenium.manager;
+package com.telran.selenium.model;
 
 public class BoardNames {
     private  String boardName;
@@ -6,7 +6,7 @@ public class BoardNames {
 
 
     public BoardNames setBoardName(String boardsName) {
-        this.boardName = boardsName;
+        this.boardName=boardsName;
         return this;
     }
 

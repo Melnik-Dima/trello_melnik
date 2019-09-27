@@ -46,7 +46,7 @@ public class HelperBase {
     }
 
     public void clickOnPlusButtonFromLeftNavMenu() {
-        waitForElementAndClick(By.cssSelector(".icon-add.icon-sm"), 15);
+        waitForElementAndClick(By.cssSelector(".icon-add.icon-sm"), 20);
     }
 
     public void waitForElementAndClick(By locator, int time) {
