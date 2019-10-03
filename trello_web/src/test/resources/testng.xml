@@ -6,6 +6,7 @@
             <class name="com.telran.selenium.tests.BoardCreationTests"/>
             <class name="com.telran.selenium.tests.BoardModificationTests"/>
             <class name="com.telran.selenium.tests.BoardDeletionTests"/>
+
         </classes>
     </test>
 </suite>
