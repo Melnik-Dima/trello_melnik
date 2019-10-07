@@ -59,7 +59,7 @@ public class BoardHelper extends HelperBase {
     }
 
     public void openThirstBoard() {
-        new WebDriverWait(driver,50).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='boards-page-board-section-list']/li[1]")));
+        new WebDriverWait(driver, 40).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='boards-page-board-section-list']/li[1]")));
         click(By.xpath("//*[@class='boards-page-board-section-list']/li[1]"));
     }
 

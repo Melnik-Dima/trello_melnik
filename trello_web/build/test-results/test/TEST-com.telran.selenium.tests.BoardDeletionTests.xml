@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.selenium.tests.BoardDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-03T15:26:47" hostname="MacBook-Pro-Dmitrij.local" time="57.721">
-  <properties/>
-  <testcase name="testBoardDeletion" classname="com.telran.selenium.tests.BoardDeletionTests" time="57.721"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
