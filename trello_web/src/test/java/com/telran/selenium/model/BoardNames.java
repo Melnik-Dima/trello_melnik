@@ -13,4 +13,11 @@ public class BoardNames {
     public String getBoardName() {
         return boardName;
     }
+
+    @Override
+    public String toString() {
+        return "BoardNames{" +
+                "boardName='" + boardName + '\'' +
+                '}';
+    }
 }
