@@ -1,0 +1,14 @@
+21:09:38.212 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+21:09:40.549 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+21:09:40.609 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+21:09:40.639 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+21:09:40.849 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+21:09:40.908 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+21:09:40.943 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+21:09:41.005 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.id: loginfound
+21:09:41.101 [Test worker] INFO  com.telran.selenium.tests.TestBase - start testchangeAvatarTestwith parameters[]
+21:09:53.391 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+21:09:53.483 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-profile']found
+21:09:56.783 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .rsiNque2CCqtPEfound
+21:09:56.981 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.name: filefound
+21:10:00.019 [Test worker] INFO  com.telran.selenium.tests.TestBase - stop testchangeAvatarTest

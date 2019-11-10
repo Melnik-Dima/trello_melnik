@@ -1,0 +1,8 @@
+21:05:27.824 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+21:05:30.217 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+21:05:30.284 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+21:05:30.321 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+21:05:30.524 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+21:05:30.590 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+21:05:30.626 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+21:05:30.704 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.id: loginfound

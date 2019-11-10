@@ -1,0 +1,97 @@
+20:13:14.468 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+20:13:16.998 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+20:13:17.070 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+20:13:17.113 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+20:13:17.312 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+20:13:17.369 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+20:13:17.412 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+20:13:17.485 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.id: loginfound
+20:13:27.736 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+20:13:27.749 [Test worker] INFO  com.telran.selenium.tests.TestBase - start testtestBoardCreationFromPersonalBoardsSectionwith parameters[]
+20:13:27.782 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..found
+20:13:27.800 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:13:27.825 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:13:27.841 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-tile.mod-addfound
+20:13:28.018 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: div.form-container input.subtle-inputfound
+20:13:28.090 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: div.form-container input.subtle-inputfound
+20:13:28.130 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: div.form-container input.subtle-inputfound
+20:13:28.290 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .subtle-chooser-trigger.unstyled-button.org-chooser-triggerfound
+20:13:28.303 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .subtle-chooser-trigger.unstyled-button.org-chooser-triggerfound
+20:13:28.389 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //ul[@class='pop-over-list org-chooser']/li[1]found
+20:13:28.483 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@type='submit']found
+20:13:30.324 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-board-editing-target.board-header-btn-textfound
+20:13:30.401 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-board-editing-target.board-header-btn-textfound
+20:13:55.500 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:13:55.524 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:13:55.633 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:13:56.291 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:13:56.327 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:13:56.331 [Test worker] INFO  com.telran.selenium.tests.TestBase - stop testtestBoardCreationFromPersonalBoardsSection
+20:13:56.345 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:13:56.357 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:14:00.624 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:14:00.645 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:14:01.440 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+20:14:01.753 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+20:14:01.852 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-close-boardfound
+20:14:02.008 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .no-back inputfound
+20:14:27.199 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:14:27.223 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:14:27.356 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:14:27.899 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:14:27.943 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:14:30.098 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:14:30.280 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:14:30.852 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+20:14:30.986 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+20:14:31.086 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-close-boardfound
+20:14:31.231 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .no-back inputfound
+20:14:56.319 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:14:56.341 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:14:56.442 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:14:57.043 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:14:57.072 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:14:59.213 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:14:59.339 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:14:59.929 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+20:15:00.046 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+20:15:00.242 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-close-boardfound
+20:15:00.438 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .no-back inputfound
+20:15:25.631 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:15:25.652 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:15:26.013 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:15:27.052 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:15:27.359 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:15:31.148 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:15:31.164 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:15:31.727 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+20:15:31.867 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+20:15:31.981 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-close-boardfound
+20:15:32.207 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .no-back inputfound
+20:15:57.357 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:15:57.398 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:15:57.494 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:15:58.303 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:15:58.340 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:16:02.155 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:16:02.176 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:16:02.876 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+20:16:02.938 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+20:16:03.088 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-close-boardfound
+20:16:03.262 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .no-back inputfound
+20:16:28.383 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:16:28.397 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:16:28.495 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:16:29.276 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:16:29.307 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:16:33.017 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:16:33.031 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+20:16:33.594 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+20:16:33.835 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+20:16:33.915 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-close-boardfound
+20:16:34.084 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .no-back inputfound
+20:16:59.248 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+20:16:59.258 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:16:59.351 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+20:16:59.819 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+20:16:59.856 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound

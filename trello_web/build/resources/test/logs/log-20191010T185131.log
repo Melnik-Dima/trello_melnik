@@ -1,0 +1,84 @@
+18:51:40.482 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [href='/login']
+18:51:40.506 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+18:51:40.947 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:51:43.889 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:51:43.979 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:51:43.993 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:51:44.022 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:51:44.033 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:51:44.217 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type='password']
+18:51:44.234 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+18:51:44.287 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type='password']
+18:51:44.302 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+18:51:44.329 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type='password']
+18:51:44.340 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [type='password']found
+18:51:44.403 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.id: login
+18:51:44.421 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.id: loginfound
+18:51:44.500 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-member-menu-button']
+18:51:56.551 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+18:51:56.571 [Test worker] INFO  com.telran.selenium.tests.TestBase - start testtestBoardCreationFromPlusButtonOnHeaderwith parameters[]
+18:51:56.573 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..
+18:51:56.599 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..found
+18:52:01.606 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:52:01.623 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:52:01.623 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:52:01.638 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:52:01.639 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-create-menu-button']
+18:52:01.653 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-menu-button']found
+18:52:01.774 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-create-board-button']
+18:52:01.791 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-board-button']found
+18:52:01.911 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-create-board-title-input']
+18:52:01.930 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-board-title-input']found
+18:52:02.006 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-create-board-title-input']
+18:52:02.018 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-board-title-input']found
+18:52:02.041 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-create-board-title-input']
+18:52:02.052 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-board-title-input']found
+18:52:02.274 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .W6rMLOx8U0MrPx
+18:52:02.288 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .W6rMLOx8U0MrPxfound
+18:52:02.289 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .W6rMLOx8U0MrPx
+18:52:02.302 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .W6rMLOx8U0MrPxfound
+18:52:02.369 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]
+18:52:02.387 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //nav[@class='SdlcRrTVPA8Y3K']//li[1]found
+18:52:02.450 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-create-board-submit-button']
+18:52:02.465 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-create-board-submit-button']found
+18:52:02.529 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .js-board-editing-target.board-header-btn-text
+18:52:04.028 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-board-editing-target.board-header-btn-textfound
+18:52:04.029 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .js-board-editing-target.board-header-btn-text
+18:52:04.134 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-board-editing-target.board-header-btn-textfound
+18:52:04.148 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:52:29.186 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:52:29.187 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: a[href='/']
+18:52:29.204 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:52:29.292 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: a[href='/']
+18:52:29.306 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:52:29.390 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:52:29.987 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:52:29.987 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:52:30.017 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:52:30.021 [Test worker] INFO  com.telran.selenium.tests.TestBase - stop testtestBoardCreationFromPlusButtonOnHeader
+18:52:30.023 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:52:30.037 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:52:30.037 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:52:30.049 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:52:30.490 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='boards-page-board-section-list']/li[1]
+18:52:33.277 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+18:52:33.278 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='boards-page-board-section-list']/li[1]
+18:52:33.288 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='boards-page-board-section-list']/li[1]found
+18:52:33.360 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .board-header-btn.mod-show-menu
+18:52:34.034 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+18:52:34.057 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .js-open-more
+18:52:34.073 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+18:52:34.157 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .js-close-board
+18:52:34.181 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .js-close-boardfound
+18:52:34.254 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: .no-back input
+18:52:34.277 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: .no-back inputfound
+18:52:34.379 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:52:59.417 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:52:59.417 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: a[href='/']
+18:52:59.431 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:52:59.563 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.cssSelector: a[href='/']
+18:52:59.580 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:52:59.638 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:53:00.239 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:53:00.240 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:53:00.268 [Test worker] INFO  c.t.s.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
