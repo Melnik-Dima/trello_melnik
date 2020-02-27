@@ -82,7 +82,7 @@ public class ApplicationManager {
         sessionHelper = new SessionHelper(driver);
         userHelper = new UserHelper(driver);
         sessionHelper.openSite("https://trello.com/");
-        sessionHelper.login("familymelniks@gmail.com", "gnomikim");
+        sessionHelper.login();
     }
 
 

@@ -37,7 +37,7 @@ public class ApplicationManager {
         sessionHelper = new SessionHelper(driver);
         userHelper = new UserHelper(driver);
 
-        sessionHelper.login("familymelniks@gmail.com", "gnomikim");
+       // sessionHelper.login("familymelniks@gmail.com", "gnomikim");
     }
 
 
